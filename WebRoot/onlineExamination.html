@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>navMenu.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+    <style>
+    * {
+    	margin:0px;
+    	padding:0px;
+    }
+    body {
+    	background-color:cyan;
+    	font-family:verdana;
+    	padding:20px;
+    }
+    h1 {
+    	text-align:center;
+    	border-bottom:2px solid red;
+    	margin-left:30px;
+    	margin-bottom:20px;
+    }
+    ul#navmenu , ul.sub1 , ul.sub2 , ul.sub3 ,li{
+    	list-style-type:none;
+    	 }
+    ul#navmenu li {
+    	position:relative;
+    	text-align:center;
+    	float:left;
+    	width:125px;
+    	margin-right:10px;
+   		margin-top:3px;
+   		font-size:12pt;
+    }
+    ul#navmenu a{
+    	text-decoration:none;
+    	display:block;
+    	width:125px;
+    	height:25px;
+    	line-height:25px;
+    	font-color:green;
+    	background-color:white;
+    	border:2px ;
+    	border-radius:5px;
+    	margin-top:3px;
+    	left:125px;
+    	
+    }
+    
+    ul#navmenu .sub3 li{
+    	margin-left:126px;
+    	
+    }
+    
+    
+    ul#navmenu li:hover > a {
+    	background-color:#999900
+    }
+    ul#navmenu li:hover a:hover{
+    	background-color:yellow;
+    }
+    ul#navmenu ul.sub3 {
+    	position:absolute;
+    	top:0px;
+    }
+    ul#navmenu ul.sub1 {
+    	display:none;
+    	left:0px;
+    	position:absolute;
+    	top:25px;
+    }
+    ul#navmenu ul.sub2 {
+    	display:none;
+    	position:absolute;
+    	top:25px;
+    }
+    ul#navmenu ul.sub3 {
+    	display:none;
+    	left:0px;
+    	position:absolute;
+    	top:0px;
+    }
+    ul#navmenu ul.sub4 {
+    	display:none;
+    	left:5px;
+    	position:absolute;
+    	top:25px;
+    }
+    ul#navmenu li:hover .sub1{
+    display:block;
+    }
+    
+    ul#navmenu li:hover .sub2{
+    display:block;
+    }
+    ul#navmenu .sub2 li:hover .sub3{
+    display:block;
+    }
+    
+    ul#navmenu li:hover .sub4{
+    display:block;
+    }
+    .darrow{
+    font-size:10pt;
+    position:absolute;
+    top:4px;
+    right:4px;
+    }
+    
+    </style>
+
+  </head>
+  
+  <body ><center>
+  <h1>Welcome to Online-Exam</h1>
+    <ul id="navmenu">
+    <li><a href="home.html" target="target" >HOME</a></li>
+    <li><a href="#">USER</a><span class="darrow">&#9660;</span>
+    	<ul class="sub1">
+	    <li><a href="register.jsp" target="target" >REGISTER</a></li>
+    	<li><a href="Signin.jsp" target="target">LOGIN</a></li>
+    	<li><a href="getDetails.jsp" target="target">GET-DETAILS</a></li>
+    	</ul>
+    </li>
+    <li><a href="#" target="target">JAVA</a><span class="darrow">&#9660;</span>
+    	<ul class="sub2">
+	    	<li><a href="http://www.oracle.com/technetwork/java/javase/overview/javahistory-index-198355.html"  target="target">HISTORY</a></li>
+    		<li><a href="#" target="target" >CORE-JAVA</a></li>
+    		<li><a href="#" >ADV-JAVA</a><span class="darrow">&#9654;</span>
+    			<ul class="sub3">
+    			<li><a href="#" target="target">JDBC</a></li>
+    			<li><a href="#" target="target">SERVLETS</a></li>
+    			<li><a href="#" target="target">JSP</a></li>
+    			</ul>
+    		</li>
+    	</ul>
+    </li>
+    <li><a href="Signin.jsp" target="target">HTML</a></li>
+    <li><a href="#" >EXAM</a><span class="darrow">&#9660;</span>
+    	<ul class="sub4">
+	    <li><a href="Signin.jsp"  target="target">JAVA</a></li>
+    	<li><a href="Signin.jsp" target="target">.NET</a></li>
+    	<li><a href="Signin.jsp" target="target">HTML</a></li>
+    	</ul>
+    </li>
+    </ul>
+    </center>
+  </body>
+</html>
